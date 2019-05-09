@@ -248,7 +248,31 @@ using WebEngageBridge;
 
 ### Rich Push Notifications
 
-#### 1. Adding Extensions and Pods Manually
+#### 1. Banner Push Notifications
+
+ 1. Download the [WebEngageNotificationService.unitypackage](https://github.com/WebEngage/webengage-unity-ios/raw/master/WebEngageNotificationService.unitypackage).
+
+ 2. Import the downloaded unitypackage into your Unity project through `Assets` > `Import Package` > `Custom Package...`.
+
+ 3. Build your iOS app through Unity Editor and open Unity-iPhone.xcodeproj in your Xcode IDE.
+
+ 4. Verify that NotificationService extension is added and linked to your main app target.
+
+
+#### 2. Rating and Carousel Push Notifications
+
+ 1. Download the [WebEngageNotificationContent.unitypackage](https://github.com/WebEngage/webengage-unity-ios/raw/master/WebEngageNotificationContent.unitypackage).
+
+ 2. Import the downloaded unitypackage into your Unity project through `Assets` > `Import Package` > `Custom Package...`.
+
+ 3. Build your iOS app through Unity Editor and open Unity-iPhone.xcodeproj in your Xcode IDE.
+
+ 4. Verify that NotificationContent extension is added and linked to your main app target.
+
+
+#### Troubleshooting for Rich Push Notifications
+
+If you are having issues with then try adding extensions and pods manually.
 
  1. Build your iOS app through Unity Editor and open Unity-iPhone.xcodeproj in your Xcode IDE.
 
