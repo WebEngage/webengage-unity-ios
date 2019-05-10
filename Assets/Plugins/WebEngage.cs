@@ -80,7 +80,7 @@ namespace WebEngageBridge
         private static extern void deleteUserAttribute(string key);
 
         [DllImport("__Internal")]
-        private static extern void deleteUserAttributes(List<string> keys);
+        private static extern void deleteUserAttributes(string keys);
 
         [DllImport("__Internal")]
         private static extern void screenNavigated(string screen);
@@ -281,7 +281,9 @@ namespace WebEngageBridge
         public static void DeleteUserAttributes(List<string> keys)
         {
 #if UNITY_IOS
-            deleteUserAttributes(keys);
+            var json = new JSONObject(keys);
+            string jsonString = json.ToString();
+            deleteUserAttributes(jsonString);
 #endif
         }
 

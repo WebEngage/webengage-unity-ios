@@ -273,6 +273,13 @@ namespace WebEngageBridge
             list = new List<JSONObject>(objs);
         }
 
+        public JSONObject(List<string> strList)
+        {
+            type = Type.ARRAY;
+            JSONObject[] jsonArr = GetStringJSONObjects(strList);
+            list = new List<JSONObject>(jsonArr);
+        }
+
         public JSONObject(List<object> objList)
         {
             type = Type.ARRAY;

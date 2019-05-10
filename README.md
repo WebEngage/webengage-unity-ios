@@ -272,11 +272,13 @@ using WebEngageBridge;
 
 #### Troubleshooting for Rich Push Notifications
 
-If you are having issues with then try adding extensions and pods manually.
+**1. If you are facing integration or build issues with rich-push notification unity plugins, then try adding the extensions and pods manually.**
 
- 1. Build your iOS app through Unity Editor and open Unity-iPhone.xcodeproj in your Xcode IDE.
+ 1. Remove the WebEngageNotificationService.unitypackage and WebEngageNotificationContent.unitypackage plugins (if added).
 
- 2. Follow the instructions at [WebEngage documentation](https://docs.webengage.com/docs/ios-push-messaging#section-5-rich-push-notifications).
+ 2. Build your iOS app through Unity Editor and open Unity-iPhone.xcodeproj in your Xcode IDE.
+
+ 3. Follow the instructions at [WebEngage documentation](https://docs.webengage.com/docs/ios-push-messaging#section-5-rich-push-notifications).
 
 
 ## In-app Notifications
