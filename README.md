@@ -12,7 +12,7 @@ WebEngage Unity iOS plugin for Unity iOS apps. This unitypackage is only for iOS
 
 ## Update
 
- 1. Replace the framework file at `Assets/Plugins/iOS/WebEngage.framework` with the latest [WebEngage framework](https://github.com/WebEngage/webengage-unity-ios/tree/master/Assets/Plugins/iOS/).
+ 1. Replace the framework file at `Assets/Plugins/iOS/WebEngage.framework` with the latest [WebEngage framework](https://github.com/WebEngage/webengage-unity-ios/raw/master/WebEngage.framework.zip). Unzip the downloaded zip file to get the framework.
 
 
 ## Initialization

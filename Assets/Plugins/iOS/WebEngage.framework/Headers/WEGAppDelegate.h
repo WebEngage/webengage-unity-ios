@@ -17,6 +17,11 @@ typedef NS_ENUM(NSInteger, WEGReason){
 };
 
 
+/**
+ Protocol with callbacks for handling Deep Links on Push Notification & anonymous User ID updates.
+ 
+ Apps can choose to conform to this protocol with optional functions & perform custom actions when invoked.
+ */
 @protocol WEGAppDelegate <NSObject>
 
 @optional
@@ -24,8 +29,8 @@ typedef NS_ENUM(NSInteger, WEGReason){
 /**
  *  This is a callback that gets called whenever a push notification is clicked, and provide deeplink and user data associated with the notification
  *
- *  @param : deeplink String sent for deep linking from WebEngage dashboard
- *  @param : userData User data associated with the notification
+ *  @param deeplink String sent for deep linking from WebEngage dashboard
+ *  @param data User-data associated with the notification
  */
 - (void)WEGHandleDeeplink:(NSString *)deeplink userData:(NSDictionary *)data;
 
@@ -33,8 +38,8 @@ typedef NS_ENUM(NSInteger, WEGReason){
 /**
  *  This is a callback that gets called every time anonymous id of user gets refreshed
  *
- *  @param : anonymousID Contains anonymous ID
- *  @param : reason Reason for which a new ID is generated
+ *  @param anonymousID Contains anonymous ID
+ *  @param reason Reason for which a new ID is generated
  */
 - (void)didReceiveAnonymousID:(NSString *)anonymousID forReason:(WEGReason)reason;
 

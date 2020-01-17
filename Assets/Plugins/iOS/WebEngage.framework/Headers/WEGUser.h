@@ -49,25 +49,16 @@ typedef NS_ENUM(NSInteger, WEGUserProfileAttribute) {
  *  This Enum represents the different Engagement Types in User's Application.
  */
 typedef NS_ENUM(NSInteger, WEGEngagementChannel) {
-    /**
-     *  Push Notifications
-     */
+    
     WEGEngagementChannelPush = 1 << 1,
     
-    /**
-     *  InApp Notifications
-     */
     WEGEngagementChannelInApp = 1 << 2,
     
-    /**
-    *  Email
-    */
     WEGEngagementChannelEmail = 1 << 3,
     
-    /**
-     *  SMS
-     */
     WEGEngagementChannelSMS = 1 << 4,
+    
+    WEGEngagementChannelWhatsapp = 1 << 5
 };
 
 
@@ -260,8 +251,8 @@ typedef NS_ENUM(NSInteger, WEGEngagementChannel) {
 
 /**
  *  Set location of user in WebEngage System. If auto location tracking is enabled for WebEngage, WebEngage will manage location updates on it's own, however you can call this method to set user location if you have disbaled auto location tracking, or to manually set the location.
- *  @pram latitude
- *  @param longitude
+ *  @param latitude Current latitude of user in NSNumber format
+ *  @param longitude Current longitude of user in NSNumber format
  */
 - (void)setUserLocationWithLatitude:(NSNumber *)latitude andLongitude:(NSNumber *)longitude;
 

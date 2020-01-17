@@ -4,3 +4,8 @@ framework module WebEngage {
   export *
   module * { export * }
 }
+
+module WebEngage.Swift {
+    header "WebEngage-Swift.h"
+    requires objc
+}

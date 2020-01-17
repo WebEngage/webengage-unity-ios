@@ -1,0 +1,18 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name WebEngage
+import Swift
+import UIKit
+@_exported import WebEngage
+@objc @objcMembers public class WEGInAppUtils : ObjectiveC.NSObject {
+  @objc public class func shouldPresentInapp(for data: [Swift.AnyHashable : Any]) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @objcMembers public class WEGUtils : ObjectiveC.NSObject {
+  @objc public class func deleteWebEngageDirectory()
+  @objc public class func createDirectory(at path: Swift.String)
+  @objc public class func createFile(at path: Swift.String, from oldPath: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
