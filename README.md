@@ -10,6 +10,11 @@ WebEngage Unity iOS plugin for Unity iOS apps. This unitypackage is only for iOS
  2. Import the downloaded unitypackage into your Unity project through `Assets` > `Import Package` > `Custom Package...`.
 
 
+## Update
+
+ 1. Replace the framework file at `Assets/Plugins/iOS/WebEngage.framework` with the latest [WebEngage framework](https://github.com/WebEngage/webengage-unity-ios/tree/master/Assets/Plugins/iOS/).
+
+
 ## Initialization
 
  1. Add the following values in `/Assets/Editor/WebEngagePostProcessBuild.cs` file.
