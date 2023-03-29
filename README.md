@@ -16,13 +16,13 @@ WebEngage Unity iOS plugin for Unity iOS apps. This unitypackage is only for iOS
 
 2. Unzip zip file to get XCFramework file
 
-3. Copy Unzipped XCFramework inside your project folder
+3. Copy Unzipped `XCFramework` inside your project folder
 
 4. Open Unity iOS Project in XCode
 
-5. In Xcode, go to your Targets, under UnityFramework Target, select Build Phases
+5. In Xcode, go to your `Targets`, under `UnityFramework` Target, select `Build Phases`
 
-6. Add XCFramework under Link Binary With Libraries, You can drag and drop XCFramework or add thourgh + option under it
+6. Add XCFramework under `Link Binary With Libraries`, You can drag and drop `XCFramework` or add thourgh + option under it
 
 ![image](https://webengage-sdk.s3.us-west-2.amazonaws.com/unity/ios/images/IntegrationNativeStep.png)
 
